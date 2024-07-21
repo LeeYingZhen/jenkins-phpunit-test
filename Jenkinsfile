@@ -4,9 +4,6 @@ pipeline {
 			image 'composer:latest'
 		}
 	}
-        environment {
-        	DOCKER_HOST = 'npipe:////./pipe/docker_engine'
-        }
 	stages {
 		stage('Build') {
 			steps {
